@@ -1,7 +1,7 @@
 # Hands On Trove
 Database as a Service in OpenStack
 
-O'Reilly Webcast, May 21, 2014
+OpenStack Israel, June 2, 2014
 
 Florian Haas, hastexo
 
@@ -22,12 +22,12 @@ For initially setting up the virtual machine, you'll also need
 
 Clone this repo:
 
-    git clone git://github.com/fghaas/oreillywebcast-may2014
+    git clone git://github.com/fghaas/openstackisrael2014-trove
 
 Update the [submodule](http://git-scm.com/book/en/Git-Tools-Submodules):
 
     git submodule init
-	git submodule update
+    git submodule update
 
 Edit the `Vagrantfile` to increase the RAM allocation, if you can:
 
@@ -98,5 +98,5 @@ And when needed, wake it up again with
 ## Questions?
 
 Feel free to
-[file an issue](https://github.com/fghaas/oreillywebcast-may2014/issues)
+[file an issue](https://github.com/fghaas/openstackisrael2014-trove/issues)
 in this repo if you need help.
