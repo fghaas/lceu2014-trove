@@ -43,6 +43,7 @@ Vagrant.configure("2") do |config|
   config.vm.provider :libvirt do |domain|
     domain.memory = ram
     domain.nested = false
+    domain.storage :file, :size => '10G', :device => 'vda'
   end
 
   # Run the provisioning script

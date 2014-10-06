@@ -8,6 +8,15 @@ if [ -e $PROVFILE ]; then
   exit 0
 fi
 
+if [ -e /dev/disk/by-label/opt ]; then
+    echo "Not creating separate filesystem for /opt (already exists)"
+else
+    # Create a separate filesystem for /opt
+    mkfs -t ext4 -L opt /dev/vda
+    echo -e "LABEL=opt\t/opt\tauto\trelatime\t0\t0" >> /etc/fstab
+fi
+mount -a
+
 # Install Squid and enable caching. Redstack, DevStack and diskimage-builder
 # install the same packages again and again, so use hitting the network for
 # all of them
