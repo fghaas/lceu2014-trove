@@ -26,6 +26,10 @@ Vagrant.configure("2") do |config|
   # Set the hostname
   config.vm.hostname = "devstack"
 
+  # Configure the synced folder to use rsync instead of the default
+  # (so the "libvirt" provider doesn't need to mess with NFS)
+  config.vm.synced_folder ".", "/vagrant", type: "rsync"
+
   # VirtualBox specific settings.
   config.vm.provider :virtualbox do |vb|
     # Boot with a GUI so you can see the screen. (Default is headless)
