@@ -17,6 +17,8 @@ else
 fi
 mount -a
 
+apt-get update
+
 # Install Squid and enable caching. Redstack, DevStack and diskimage-builder
 # install the same packages again and again, so use hitting the network for
 # all of them
