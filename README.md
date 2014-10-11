@@ -1,7 +1,7 @@
 # Hands On Trove
 Database as a Service in OpenStack
 
-OpenStack Israel, June 2, 2014
+LinuxCon Europe, Düsseldorf, Oct 13, 2014
 
 Florian Haas, hastexo
 
@@ -22,7 +22,7 @@ For initially setting up the virtual machine, you'll also need
 
 Clone this repo:
 
-    git clone git://github.com/fghaas/openstackisrael2014-trove
+    git clone git://github.com/fghaas/lceu2014-trove
 
 Update the [submodule](http://git-scm.com/book/en/Git-Tools-Submodules):
 
@@ -98,5 +98,5 @@ And when needed, wake it up again with
 ## Questions?
 
 Feel free to
-[file an issue](https://github.com/fghaas/openstackisrael2014-trove/issues)
+[file an issue](https://github.com/fghaas/lceu2014-trove/issues)
 in this repo if you need help.
