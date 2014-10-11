@@ -54,12 +54,6 @@ apt-get -y install git
 # which must run as a regular user.
 sudo -i -u vagrant /vagrant/provision-vagrant.sh
 
-# And finally, enable this horrible hack as per
-# https://wiki.openstack.org/wiki/Trove/dev-env
-# (without which the guestagent can't complete
-# the guest's configuration)
-/vagrant/iptables-hack.sh
-
 # Prevent accidental re-provisioning
 touch $PROVFILE
 
